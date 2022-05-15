@@ -12,7 +12,7 @@ First, install the dependencies:
 yarn install
 ```
 
-Secondly, modify the .env file
+Secondly, modify the .env file:
 
 ```bash
 cp .env.example .env
@@ -35,11 +35,11 @@ If you have docker and compose installed you can run:
 docker-compose up -d db
 ```
 
-to run a local postgresql server which comes preconfigured in the `.env.example` file
+for running a local postgresql server which comes preconfigured in the `.env.example` file
 
 ## Production
 
-For production please configure the .env file accordingly and then run:
+For production please configure the `.env` file accordingly and then run:
 
 ```bash
 docker-compose -f docker-compose-prod.yml up -d
