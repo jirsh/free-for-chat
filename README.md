@@ -1,4 +1,8 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a realtime chat application bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+## Preview
+
+![preview_1](https://github.com/jirsh/free-for-chat/blob/main/preview_1.gif?raw=true)
 
 ## Getting Started
 
