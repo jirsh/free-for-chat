@@ -1,13 +1,6 @@
 import { format } from "date-fns";
 import { useSession } from "next-auth/react";
-import {
-  ChangeEvent,
-  FC,
-  KeyboardEvent,
-  useEffect,
-  useRef,
-  useState,
-} from "react";
+import { FC, useEffect, useRef, useState } from "react";
 import { FaCopy } from "react-icons/fa";
 import { connect } from "socket.io-client";
 
@@ -23,7 +16,7 @@ const Message: FC<MessageType> = (msg) => (
     <div className="flex flex-col max-w-full">
       <div className="text-xl">{msg.username}</div>
       <div className="text-xs text-slate-300">
-        {format(msg.sent, "MM/dd/yyyy")}
+        {format(msg.sent, "MM/dd/yyyy h:m")}
       </div>
     </div>
     <div className="border-r" />

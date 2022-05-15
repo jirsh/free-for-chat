@@ -1,0 +1,38 @@
+version: "3.9"
+services:
+  db:
+    container_name: chat_db
+    image: postgres:14.2-alpine
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./postgresdata:/var/lib/postgresql/data
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: supersecretlol
+      POSTGRES_DB: db
+    networks:
+      - internal-network
+  nextjs:
+    container_name: chat_nextjs
+    ports:
+      - "3000:3000"
+    expose:
+      - "3000"
+    build:
+      context: .
+      dockerfile: Dockerfile_Prod
+    volumes:
+      - .:/app
+    environment:
+      WAIT_HOSTS: db:5432
+    networks:
+      - internal-network
+      - exposed
+networks:
+  internal-network:
+    driver: bridge
+    internal: true
+  exposed:
+    driver: bridge
