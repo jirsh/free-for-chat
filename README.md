@@ -1,5 +1,7 @@
 This is a realtime chat application bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+[![build](https://github.com/jirsh/free-for-chat/actions/workflows/node.js.yml/badge.svg)](https://github.com/jirsh/free-for-chat/actions/workflows/node.js.yml)
+
 ## Preview
 
 ![preview_1](https://github.com/jirsh/free-for-chat/blob/main/preview_1.gif?raw=true)
