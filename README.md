@@ -32,10 +32,8 @@ yarn dev
 If you have docker and compose installed you can run:
 
 ```bash
-docker-compose up -d db
+docker-compose up -d db # runs a local postgresql server which is preconfigured in the `.env.example` file
 ```
-
-for running a local postgresql server which comes preconfigured in the `.env.example` file
 
 ## Production
 
