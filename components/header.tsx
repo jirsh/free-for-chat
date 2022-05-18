@@ -29,7 +29,7 @@ const Header = () => {
     <>
       <header className="header">
         <Link href="/">
-          <a className="text-xl h-full flex items-center">jir/sh</a>
+          <a className="text-xl h-full flex items-center">chat application</a>
         </Link>
         <div className="ml-auto" />
         <nav className="space-x-3 hidden md:flex h-full">

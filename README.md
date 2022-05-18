@@ -44,3 +44,25 @@ For production please configure the `.env` file accordingly and then run:
 ```bash
 docker-compose -f docker-compose-prod.yml up -d
 ```
+
+## Libraries
+
+- [Socket.IO](https://socket.io/)
+- [Prisma](https://www.prisma.io)
+- [Tailwind CSS](https://tailwindcss.com/)
+
+## Features
+
+- Send messages
+- Delete messages
+- Command support
+- Loading of x last messages(default 10)
+
+## Commands
+
+- `/clear` - clears messages without deleting from the database(refreshing loads them back)
+- `/deleteall` - deletes and clears all messages from the database
+- `/ping` - a system command that replies with pong
+- `/random` - a system command that replies with a random number generated from a min and max
+
+_to add more features/commands please make a pull request_
